@@ -1,0 +1,418 @@
+/* .l .home-filter-buttons-wrap {
+  justify-content: flex-start !important;
+} */
+
+.showCaseBeforLogin .drawkit-header:after {
+  content: "Make your webpages and apps more engaging";
+}
+
+.showCaseAfterLogin .drawkit-header:after {
+  content: "Get inspired";
+}
+
+.proUser .premium-plan:after {
+  content: url("https://uploads-ssl.webflow.com/626f5d0ae6c15c780f2dd5c4/62fdc89adf7c72277b802f87_Group%2020056.svg");
+}
+
+.proUser #subscribe,
+.proUser .get-started {
+  display: none;
+}
+
+
+.lifiTimeUser .life-time-access-check:after {
+  content: url("https://uploads-ssl.webflow.com/626f5d0ae6c15c780f2dd5c4/62fdc89adf7c72277b802f87_Group%2020056.svg");
+}
+
+/* hidding lifi-time-access */
+.lifiTimeUser #lifetime-subscribtion-button {
+  display: none;
+}
+
+/* hidding pro  */
+.lifiTimeUser #subscribe,
+.lifiTimeUser .get-started {
+  display: none;
+}
+
+.freeUser .free-plan:after {
+  content: url("https://uploads-ssl.webflow.com/626f5d0ae6c15c780f2dd5c4/62fdc89adf7c72277b802f87_Group%2020056.svg");
+  /* content: "Current";
+ padding: 8px;
+  background: #1aa1e5;
+  border-radius: 20px;  */
+}
+
+.drawkitprostyle a {
+  color: #ffffff;
+  background-color: black;
+
+}
+
+.freeUser .get-started {
+  display: none;
+}
+
+/* heart css*/
+.heart-magenta svg:hover path {
+  stroke: none;
+  stroke-width: 0.0;
+  fill: #f075c6;
+  opacity: 0.5;
+
+}
+
+.heart-bg {
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 200px;
+  display: flex;
+}
+
+/* loading css*/
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #f075c6;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.popup-open #cancel-popup {
+  display: flex;
+}
+
+.subscription-invoice-details>.subscription-invoice-details {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.bill-date {
+  text-align: left;
+  font-size: 14px;
+  width: 100px;
+  display: block;
+  font-family: Inter, sans-serif;
+  padding: 0%;
+
+}
+
+.bill-date svg {
+  margin-top: -6px;
+}
+
+.bill-date a {
+  padding: 20%;
+}
+
+.subscription-reciepts-grid>div {
+  width: 100px;
+
+
+}
+
+
+
+/* hart animation */
+#replace-heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+
+#replace-heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+/* in about page for open-close */
+.open_close svg {
+
+  color: #1AA1E5 !important;
+  transform: rotate(-135deg) !important;
+
+
+}
+
+/* .faq-answer1 {
+  transition: all 1s 1s !important;
+  display: block !important;
+
+} */
+.faq-answer-open {
+  display: block !important;
+  overflow: hidden;
+  animation: anime-open 0.5s linear !important;
+}
+
+@keyframes anime-open {
+  from {
+    height: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  to {
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+  }
+}
+
+.faq-answer-close {
+  overflow: hidden;
+  display: none !important;
+  animation: anime-close 0.5s linear !important;
+}
+
+@keyframes anime-close {
+  from {
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  to {
+    height: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+
+/* twiter like button*/
+.heart {
+  width: 100px;
+  height: 100px;
+  /* background: url("https://cssanimation.rocks/images/posts/steps/heart.png"); */
+  background-image: url("https://cssanimation.rocks/images/posts/steps/heart.png");
+  text-align: center;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+  position: relative;
+  bottom: 25px;
+  left: 25px;
+}
+
+.is-active {
+  transition-duration: 1s;
+  background-position: -2800px 0;
+}
+
+/* faviroite pack */
+
+.favourite-details {
+  border-radius: 12px;
+  margin-bottom: 0px;
+}
+
+.cancel-favourite-wrapper {
+  cursor: pointer;
+}
+
+.pack_id {
+  display: none;
+}
+
+.detail-dropdown nav{
+  display: block;
+}
+
+
+.detail-dropdown-toggle img{
+  display: none;
+}
+
+.active-all-black {
+  background-color: black;
+  color: white;
+}
+
+.pack-image-wrapper {
+  pointer-events: none;
+}
+
+.banner-image-detail-page {
+  pointer-events: none;
+}
+
+.illustration-det-image-wrapper {
+  pointer-events: none;
+}
+
+.text-style-1lines {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+}
+
+/* buttonn loader */
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.illustration-tag-flex{
+  z-index: 0;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin: 3px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-page-form .text-size-tiny {
+  visibility: hidden;
+}
+
+.downloadChecking {
+  position: absolute;
+  background: #f075c6;
+  width: 100%;
+  border-radius: 60px;
+  display: flex;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cardLoadingTime {
+  position: absolute;
+  background-color: white;
+  border: #f075c6 0.5px solid;
+  width: 100%;
+  border-radius: 60px;
+  color: black;
+  display: flex;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+select:focus {
+  outline: none;
+}
